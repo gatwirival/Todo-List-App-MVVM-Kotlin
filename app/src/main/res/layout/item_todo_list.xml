@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Sample Title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tv_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Due date:"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_due_date"
+        android:layout_below="@id/tv_item_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:fontFamily="sans-serif"
+        android:text="30.08.2019"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <CheckBox
+        android:id="@+id/checkbox_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_below="@id/checkbox_item"
+        android:src="@drawable/ic_delete_black_24dp" />
+
+</RelativeLayout>
